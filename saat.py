@@ -30,15 +30,15 @@ def giris():
     time.sleep(5)
     while True:
         try:
-            browser.find_element_by_name("username")
-            browser.find_element_by_name("password")
+            browser.find_element_by_name("yusufbulbul01")
+            browser.find_element_by_name("samsunlu55")
             browser.find_element_by_xpath("//*[@id='react-root']/section/main/div/article/div/div[1]/div/form/div[4]/button/div")
             break
         except:
             print("-")
             time.sleep(3)
-    browser.find_element_by_name("username").send_keys(usernamess.get())
-    browser.find_element_by_name("password").send_keys(passwordss.get())
+    browser.find_element_by_name("yusufbulbul01").send_keys(usernamess.get())
+    browser.find_element_by_name("samsunlu55").send_keys(passwordss.get())
     browser.find_element_by_xpath("//*[@id='react-root']/section/main/div/article/div/div[1]/div/form/div[4]/button/div").click()
 
     time.sleep(5)
